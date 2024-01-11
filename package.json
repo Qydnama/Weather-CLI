@@ -1,11 +1,14 @@
 {
-  "name": "weather-cli",
-  "version": "1.0.0",
+  "name": "weather-cli-ab",
+  "version": "1.0.3",
   "description": "CLI for getting weather information",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,13 +17,18 @@
   ],
   "author": "Amandyk Baktybaiuly",
   "license": "ISC",
-  "homepage": "https://qydnama.com",
+  "homepage": "https://github.com/Qydnama",
   "repository": {
     "type": "git",
-    "url": "https://qydnama.com"
+    "url": "git+https://github.com/Qydnama/Weather-CLI.git"
   },
   "bugs": {
-    "url": "https://qydnama.com",
+    "url": "https://github.com/Qydnama",
     "email": "amangikbaktibaiuli@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "chalk": "^5.3.0",
+    "dedent-js": "^1.0.1"
   }
 }
